@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title></title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width">
+
+	<link rel="stylesheet" href="css/font/font.css">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/main.css">
+
+	<script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+</head>
+<body>
+<!--[if lt IE 7]>
+<p class="chromeframe">Вы используете <strong>устаревший</strong> браузер. Пожалуйста <a href="http://browsehappy.com/">обновите ваш браузер</a> или <a href="http://www.google.com/chromeframe/?redirect=true">активируйте Google Chrome Frame</a> для использования всех возможностей страницы.</p>
+<![endif]-->
+
+
+
+<div class="mainwrapper">
+	<div class="top">
+		<div class="topblack">
+			<div class="searcharea">
+				<span class="infoinheader">(812)  448 1392</span>
+				<span class="infoinheader">г.Санкт-Петербург, Индустриальный пр., д.44, к.2</span>
+				<form method="get" action="132" class="searchform">
+					<label>
+						<input type="search" name="search_string" placeholder="Поиск" class="search_input" title="поиск по сайту">
+					</label>
+					<input type="image" src="img/searchbutton.png" alt="" value="" title="начать поиск" class="searchbutton">
+				</form>
+			</div>
+			<header>
+				<nav class="main_menu">
+					<a title="РТС РОСТРАНС - На главную" class="logolink" href="#">
+						<img class="logoimg" src="img/logo.png">
+					</a>
+					<ul>
+						<li class="menulink"><a href="#">главная</a></li><img alt="" src="img/separator_main_menu.png">
+						<li class="menulink"><a href="#">услуги</a></li><img alt="" src="img/separator_main_menu.png">
+						<li class="menulink"><a href="#">вагонный парк</a></li><img alt="" src="img/separator_main_menu.png">
+						<li class="menulink"><a href="#">партнерам</a></li><img alt="" src="img/separator_main_menu.png">
+						<li class="menulink"><a href="#">контакты</a></li><img alt="" src="img/separator_main_menu.png">
+						<li class="menulink"><a href="#">форма заказа</a></li>
+					</ul>
+				</nav>
+			</header>
+		</div>
+		<div class="mediahead_form">
+			<!--на главной здесь слайдер-->
+		</div>
+	</div>
+	<section class="main_contentwrapper">
+		<div class="titleseparator">
+			<span class="title_separator"></span><span class="section_title">Форма заказа</span><span class="title_separator"></span>
+		</div>
+		<article class="main_content">
+
+			<div>
+			<form enctype="multipart/form-data" method="post" action="/send_video.html">
+				<!--антибот-->
+				<input type="hidden" value="dosend" name="substatus">
+				<!--конец антибота-->
+				<label for="name7">Имя</label>
+				<input type="text" required="Укажите ваше имя" name="fio" value="" id="name7" class="widthelement" maxlength="255" title="Контактное лицо">
+
+				<label for="name13" class="form-reg">E-mail</label>
+				<input type="email" required="Укажите ваш email" name="user_email" value="" id="name13" class="widthelement" maxlength="50" title="Ваш e-mail для связи">
+
+				<label for="name14" class="form-reg">Телефон</label>
+				<input type="tel" required="Укажите ваш телефон" name="user_phone" value="" id="name14" class="widthelement" maxlength="50" title="Ваш телефон для связи">
+
+				<label for="name15" class="form-reg">Тип подвижного состава</label>
+				<input type="text" required="Укажите тип подвижного состава" name="type_sost" value="" id="name15" class="widthelement" maxlength="50" title="Укажите тип подвижного состава">
+
+				<label for="name16" class="form-reg">Станция назначения</label>
+				<input type="text" required="Укажите станцию назначения" name="end_station" value="" id="name16" class="widthelement" maxlength="50" title="Укажите станцию назначения">
+
+				<label for="name17" class="form-reg">Код груза (ЕТСНГ)</label>
+				<input type="text" required="Укажите код груза (ЕТСНГ)" name="kodg" value="" id="name17" class="widthelement" maxlength="50" title="Укажите код груза (ЕТСНГ)">
+
+				<label for="name18" class="form-reg">Объем, м<sup>3</sup></label>
+				<input type="text" required="Укажите объем" name="obem" value="" id="name18" class="widthelement" maxlength="50" title="Укажите объем">
+
+				<label for="name19" class="form-reg">Сроки перевозки</label>
+				<input type="date" required="Укажите сроки перевозки" name="sroki" value="" id="name19" class="widthelement" maxlength="50" title="Укажите сроки перевозки">
+
+				<!--антибот-->
+				<div class="skritiyelement">
+					<label class="left" for="site">Сайт</label>
+					<input type="text" name="site" id="site" value="" class="widthelement" title="Ваш сайт (не обязательно)">
+				</div>
+				<div class="skritiyelement">
+					<label for="comment">Комментарий:</label>
+					<textarea name="comment" id="comment" class="widthelement" rows="5" cols="40"></textarea>
+				</div>
+				<!--конец антибота-->
+
+				<label for="user_comment">Примечание</label>
+				<textarea name="user_comment" id="user_comment" class="widthelement"></textarea>
+
+				<div>
+					<button type="submit" name="submit" value="Отправить" class="new_goods_submit4" title="Отправить сообщение">Отправить &nbsp; &gt;</button>
+				</div>
+
+			</form>
+			</div>
+			<div class="clearfix"></div>
+		</article>
+	</section>
+	<div class="hFooter">
+
+	</div>
+</div>
+<footer>
+	<div class="totop" style="display: none;">
+
+	</div>
+
+	<div class="firstblockfooter">
+		<img alt="" src="img/logofooter.png">
+		<p>© 2013 ЗАО «РТС»</p>
+	</div>
+	<div class="secondblockfooter">
+		<h3>СВЯЗАТЬСЯ С НАМИ</h3>
+		<p>195279, г.Санкт-Петербург,<br>
+			Индустриальный пр., д.44, к.2,<br>
+			БЦ "Охта-ХАУС" оф.620А<br>
+			Тел: (812)  448 13 92</p>
+	</div>
+	<div class="thirdblockfooter">
+		<h3>СОЗДАНИЕ САЙТА</h3>
+		<a href="">lum.ru</a>
+
+	</div>
+</footer>
+
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
+
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
+
+<!--библиотека fancybox-->
+<script type="text/javascript" src="js/fansybox/source/jquery.fancybox.js"></script>
+<link rel="stylesheet" type="text/css" href="js/fansybox/source/jquery.fancybox.css" media="screen" />
+
+<!--Шаблон вызова fancybox для всего сайта-->
+<script type="text/javascript">
+	$(document).ready(function() {
+		$(".fancyopen").fancybox({
+			openEffect : 'elastic',
+			openSpeed  : 150,
+			closeEffect : 'elastic',
+			closeSpeed  : 150,
+			closeBtn  : true,
+			closeClick : true,
+
+			helpers : {
+				title : {
+					type : 'inside'
+				},
+				overlay : {
+					css : {
+						'background' : 'rgba(0,0,0,0.85)'
+					}
+				}
+			}
+		});
+	});
+</script>
+<!--конец fancybox-->
+
+<!--нумерация списков в article-->
+<script>
+
+	//	нумерация стандартных списков
+	$("article.main_content ol li").map(function(i, o) {
+		var num = i+1;
+		$(o).prepend("<span class='numlist'>"+num+".</span>");
+	});
+
+	//	нумерация в результатах поиска по сайту
+	$("article.main_content ul.searchresult li").map(function(i, o) {
+		var num = i+1;
+		$(o).prepend("<span class='numlist_grey'>"+num+".</span>");
+	});
+</script>
+
+<!--скрипт скрола наверх(может конфликтовать с эффектами CCS3 transition)-->
+<script type="text/javascript">
+	$(document).ready(function(){
+		$(window).scroll(function(){
+			if ($(this).scrollTop() > 100) {
+				$('.totop').fadeIn();
+				return false;
+			} else {
+				$('.totop').fadeOut();
+				return false;
+			}
+			return false;
+		});
+		$('.totop').click(function(){
+			$("html, body").animate({ scrollTop: 0 }, 600);
+			return false;
+		});
+	});
+</script>
+
+<!--блок с макетами-->
+<div class="tmpblock">
+	<a href="main.html">Главная</a>
+	<a href="index.html">Типовая</a>
+	<a href="form.html">Форма заказа</a>
+	<a href="kontakti.html">Контакты</a>
+	<a href="poisk.html">Поиск</a>
+	<a href="gelery.html">Галерея</a>
+</div>
+
+</body>
+</html>
